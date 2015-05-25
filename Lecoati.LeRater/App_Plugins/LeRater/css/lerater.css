@@ -1,0 +1,17 @@
+﻿.lerater-icons {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.lerater-icon {
+    display: inline;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.lerater-rating-info {
+    display: inline-block;
+    vertical-align: middle;
+}

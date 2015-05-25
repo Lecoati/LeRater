@@ -1,0 +1,21 @@
+﻿<div ng-controller="LeRater.controller">
+
+    <ul class="lerater-icons" ng-mouseleave="clearHoveredRating()">
+        <li class="lerater-icon"
+            ng-repeat="icon in lerater.icons"
+            ng-click="toggleRating($index)"
+            ng-mouseenter="showHoveredRating($index)"
+            style="color: {{icon.color}}">
+            <i class="{{model.config.icon.selectedIcon}}"></i>
+        </li>
+        <span ng-show="lerater.showOnHover && lerater.hoveredRating"
+              class="lerater-rating-info">
+            {{lerater.hoveredRating}}/{{model.config.maxRating}}
+        </span>
+        <span ng-show="lerater.showSelected && !lerater.hoveredRating"
+              class="lerater-rating-info">
+            {{model.value}}/{{model.config.maxRating}}
+        </span>
+    </ul>
+
+</div>

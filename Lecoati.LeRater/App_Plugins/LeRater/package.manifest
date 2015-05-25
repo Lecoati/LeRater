@@ -1,0 +1,56 @@
+﻿{
+    "propertyEditors": [
+        {
+            "name": "LeRater",
+            "alias": "Lecoati.LeRater",
+            "valueType": "INT",
+            "editor": {
+                "view": "~/App_Plugins/LeRater/views/lerater.html"
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Max rating",
+                        "description": "The maximum rating that an editor can select. 5 if empty.",
+                        "key": "maxRating",
+                        "view": "number"
+                    },
+                    {
+                        "label": "Icon",
+                        "description": "The icon used to select a rating.",
+                        "key": "icon",
+                        "view": "~/App_Plugins/LeRater/views/lerater.iconpicker.html"
+                    },
+                    {
+                        "label": "Show value on hover",
+                        "description": "On hovering over an icon, show the numeric value the rating will have if that icon is clicked.",
+                        "key": "showOnHover",
+                        "view": "boolean"
+                    },
+                    {
+                        "label": "Change icons color on hover",
+                        "Description":"When hovering over an icon, display the icon colors as if that rating were selected.",
+                        "key": "changeColorOnHover",
+                        "view": "boolean"
+                    },
+                    {
+                        "label": "Show selected value",
+                        "description": "Show the selected rating on the right side of the icons.",
+                        "key": "showSelected",
+                        "view": "boolean"
+                    }
+                ]
+            }
+        }
+    ],
+    "css": [
+        "~/App_Plugins/LeRater/css/lerater.iconpicker.css",
+        "~/App_Plugins/LeRater/css/lerater.css"
+    ],
+    "javascript": [
+        "~/umbraco/lib/spectrum/spectrum.js",
+        "~/App_Plugins/LeRater/js/directives/lerater.colorpicker.directive.js",
+        "~/App_Plugins/LeRater/js/controllers/lerater.iconpicker.controller.js",
+        "~/App_Plugins/LeRater/js/controllers/lerater.controller.js"
+    ]
+}
